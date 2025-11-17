@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Simple Fiber Server</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 600px;
+            margin: 2rem;
+        }
+
+        h1 {
+            color: #4a5568;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 300;
+        }
+
+        .welcome-text {
+            font-size: 1.2rem;
+            color: #718096;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .server-info {
+            background: #f7fafc;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+            border-left: 4px solid #667eea;
+        }
+
+        .server-info h3 {
+            color: #4a5568;
+            margin-bottom: 0.5rem;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .feature {
+            background: #edf2f7;
+            padding: 1rem;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-2px);
+        }
+
+        .feature h4 {
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer {
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: #a0aec0;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 2rem;
+                margin: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Welcome!</h1>
+        <p class="welcome-text">
+            Your Simple Fiber Server is up and running successfully!<br>
+            Built with Go and the lightning-fast Fiber framework.
+        </p>
+        
+        <div class="server-info">
+            <h3>🌐 Server Status</h3>
+            <p>✅ Server is running</p>
+            <p>⚡ Powered by Go Fiber</p>
+            <p>🔧 Ready for development</p>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <h4>⚡ Fast</h4>
+                <p>Built on top of Fasthttp, the fastest HTTP engine for Go</p>
+            </div>
+            <div class="feature">
+                <h4>🛠️ Simple</h4>
+                <p>Easy to use with an Express.js inspired API</p>
+            </div>
+            <div class="feature">
+                <h4>🚀 Scalable</h4>
+                <p>Designed for high-performance applications</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Ready to build something amazing? Start coding! 💻</p>
+        </div>
+    </div>
+</body>
+</html>
